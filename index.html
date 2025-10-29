@@ -118,7 +118,9 @@
             display: flex;
             align-items: center;
             gap: 5px; 
+			font-weight: bold;
         }
+		
 
         /* 4. Grup: Alt Bilgi (Kaldırıldı) */
         /* .group-footer artık yok */
@@ -137,7 +139,12 @@
         }
         
         /* --- MOBİL UYUMLULUK --- */
-        
+        @media (min-width: 801px) {
+    .LEIFI_animation {
+        transform: scale(1.75);
+        transform-origin: top center;
+    }
+}
         @media (max-width: 800px) {
             .LEIFI_animation {
                 flex-direction: column; 
